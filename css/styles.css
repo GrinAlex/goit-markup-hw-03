@@ -19,6 +19,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+}
+
 .container {
     max-width: 1158px;
     padding: 0 15px;
@@ -27,6 +31,7 @@ a {
 
 button {
     cursor: pointer;
+    border: none;
 }
 /* #endregion */
 
@@ -125,7 +130,7 @@ button {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    width: 496px;
+    max-width: 496px;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
@@ -134,7 +139,7 @@ button {
 
 .hero-button {
     border-radius: 4px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     background-color: #4d5ae5;
     font-weight: 500;
@@ -161,8 +166,7 @@ button {
     align-items: center;
 }
 
-.visually-hidden,
-.read-only {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -186,7 +190,7 @@ button {
 }
 
 .benefits-item-title {
-    padding: 8px 0;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -209,7 +213,7 @@ button {
 }
 
 .team-title {
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -237,7 +241,7 @@ button {
 }
 
 .team-item-title {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -262,8 +266,9 @@ button {
     padding: 120px 0;
 }
 
+
 .portfolio-title {
-    padding: 0 0 72px;
+    margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -284,7 +289,7 @@ button {
 }
 
 .portfolio-item-name {
-    padding: 32px 16px;
+    margin-bottom: 8px;
 }
 
 .portfolio-item-title {
@@ -312,7 +317,7 @@ button {
 
 .footer-logo {
     display: inline-block;
-    padding: 0 0 16px;
+    margin-bottom: 16px;
 }
 
 .footer-logo .logo-part {
