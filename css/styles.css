@@ -170,14 +170,14 @@ button {
     position: absolute;
     width: 1px;
     height: 1px;
-    margin: -1px;
-    border: 0;
     padding: 0;
-    white-space: nowrap;
-    clip: rect(0 0 0 0);
-    clip-path: insert(50%);
+    margin: -1px;
     overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* щоб текст не переносився */
+    border: 0;
 }
+
 
 .benefits-list {
     display: flex;
@@ -186,7 +186,7 @@ button {
 }
 
 .benefits-item {
-    flex-basis: ccalc((100% - 72px) / 4);
+    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .benefits-item-title {
@@ -266,6 +266,9 @@ button {
     padding: 120px 0;
 }
 
+.portfolio-container {
+    border: 1px solid #e7e9fc;
+}
 
 .portfolio-title {
     margin-bottom: 72px;
@@ -285,14 +288,15 @@ button {
 }
 
 .portfolio-item {
-    flex-basis: ccalc((100% - 48px) / 3);
+    flex-basis: calc((100% - 48px) / 3);
 }
 
 .portfolio-item-name {
-    margin-bottom: 8px;
+    padding: 32px 16px;
 }
 
 .portfolio-item-title {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
