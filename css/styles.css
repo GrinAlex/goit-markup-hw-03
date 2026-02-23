@@ -266,6 +266,10 @@ button {
     padding: 120px 0;
 }
 
+.portfolio-container {
+    border-top: none;
+}
+
 .portfolio-title {
     margin-bottom: 72px;
     font-weight: 700;
